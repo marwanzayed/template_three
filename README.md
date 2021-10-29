@@ -1,2 +1,3 @@
-# template_three
-HTML_And_CSS_And_JS_Template_Three
+# Template Three
+
+HTML And CSS And JS Template Three
