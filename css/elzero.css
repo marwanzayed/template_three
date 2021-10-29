@@ -14,6 +14,24 @@
 }
 html {
   scroll-behavior: smooth;
+  scrollbar-color: var(--main-color) transparent;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+:hover::-webkit-scrollbar-thumb {
+  background-color: var(--main-color-alt);
+}
+::selection {
+  background-color: var(--main-color);
+  color: #fff;
 }
 body {
   font-family: "Cairo", sans-serif;
@@ -228,6 +246,13 @@ ul {
   background-color: #fafafa;
 }
 .header .main-nav > li > a:hover::before {
+  left: 0;
+}
+.header .main-nav > li > a.active {
+  color: var(--main-color);
+  background-color: #fafafa;
+}
+.header .main-nav > li > a.active::before {
   left: 0;
 }
 .header .mega-menu {
